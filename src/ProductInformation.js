@@ -5,7 +5,7 @@ const ProductInformation = ({ name, price, description, addToCart }) => {
     <div>
       <h1>{name}</h1>
       <p>{price}</p>
-      <p>{descriptions}</p>
+      <p>{description}</p>
       <button onClick={addToCart}>Add to Cart</button>
     </div>
   );
