@@ -1,11 +1,14 @@
-import React from "react";
+import React from 'react';
 
-function ProductInformation () {
-    return (
-        <div>
-            
-        </div>
-
-    )}
+const ProductInformation = ({ name, price, description, addToCart }) => {
+  return (
+    <div>
+      <h1>{name}</h1>
+      <p>{price}</p>
+      <p>{description}</p>
+      <button onClick={addToCart}>Add to Cart</button>
+    </div>
+  );
+};
 
 export default ProductInformation;
